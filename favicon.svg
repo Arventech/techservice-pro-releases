@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F2740"/>
+      <stop offset="1" stop-color="#06111F"/>
+    </linearGradient>
+    <linearGradient id="cian" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22C3F5"/>
+      <stop offset="1" stop-color="#0A6FD6"/>
+    </linearGradient>
+    <radialGradient id="nodo" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#7FE0FF"/>
+      <stop offset="1" stop-color="#0FA3E8"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22C3F5" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22C3F5" stop-opacity="0"/>
+    </radialGradient>
+  </defs><rect width="1024" height="1024" rx="230" fill="url(#bg)"/><g id="marca" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Hexágonos ArvenTech -->
+    <polygon points="150,512 331,198 693,198 874,512 693,826 331,826" stroke="#1E5A94" stroke-width="26"/>
+    <polygon points="225,512 368,265 656,265 799,512 656,759 368,759" stroke="#2C7BC4" stroke-opacity="0.55" stroke-width="12"/>
+
+    <!-- Pistas de circuito que salen del hexágono -->
+    <polyline points="396,640 120,640" stroke="#1E5A94" stroke-width="14"/>
+    <circle cx="120" cy="640" r="20" fill="#2C7BC4" stroke="none"/>
+    <polyline points="628,690 736,690 736,890" stroke="#1E5A94" stroke-width="14"/>
+    <circle cx="736" cy="890" r="20" fill="#2C7BC4" stroke="none"/>
+    <line x1="512" y1="150" x2="512" y2="250" stroke="#1E5A94" stroke-width="14"/>
+
+    <!-- Celular -->
+    <rect x="384" y="300" width="256" height="430" rx="52" stroke="url(#cian)" stroke-width="30"/>
+    <line x1="476" y1="684" x2="548" y2="684" stroke="#22C3F5" stroke-opacity="0.6" stroke-width="16"/>
+
+    <!-- Nodo superior (como el de ArvenTech) -->
+    <circle cx="512" cy="300" r="78" fill="url(#halo)" stroke="none"/>
+    <circle cx="512" cy="300" r="50" stroke="#2C7BC4" stroke-width="10" fill="#06111F"/>
+    <circle cx="512" cy="300" r="30" fill="url(#nodo)" stroke="none"/>
+
+    <!-- Palomita de circuito: "reparado" -->
+    <polyline points="440,520 494,574 588,462" stroke="url(#cian)" stroke-width="30"/>
+    <circle cx="440" cy="520" r="17" fill="#22C3F5" stroke="none"/>
+    <circle cx="588" cy="462" r="17" fill="#22C3F5" stroke="none"/>
+  </g>
+</svg>
